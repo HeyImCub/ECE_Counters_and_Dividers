@@ -1,4 +1,3 @@
-`timescale 1ns/1ps
 module D_FlipFlop(
     input D, reset,
     input clk,
@@ -12,7 +11,8 @@ module D_FlipFlop(
     always @(posedge clk) begin
         if (reset) begin
             Q <= 0;
-        end else begin
+        end
+        else begin
             Q <= D;
         end
     end
